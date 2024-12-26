@@ -1,0 +1,123 @@
+body,html {
+	width:100%;
+height: 100%;
+	overflow: hidden ;
+	display: flex;
+	justify-content: center;
+	background-size: cover	;
+	align-items: center;
+	transform: scale(1.01);
+}
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	--s: 60px;
+	--c1: #180a22;
+	--c2: #5b42f3;
+	--_g: radial-gradient(
+			25% 25% at 25% 25%,
+			var(--c1) 99%,
+			rgba(0, 0, 0, 0) 101%
+	);
+	background: var(--_g) var(--s) var(--s) / calc(2 * var(--s))
+					calc(2 * var(--s)),
+			var(--_g) 0 0 / calc(2 * var(--s)) calc(2 * var(--s)),
+			radial-gradient(50% 50%, var(--c2) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s)
+					var(--s),
+			repeating-conic-gradient(var(--c2) 0 50%, var(--c1) 0 100%)
+					calc(0.5 * var(--s)) 0 / calc(2 * var(--s)) var(--s);
+}
+.left,.display{
+	/* From https://css.glass */
+background: rgba(255, 255, 255, 0.27);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(29.8px);
+-webkit-backdrop-filter: blur(29.8px);
+height: 95%;
+}
+.left {
+	width: 30%;
+	position: relative;
+
+}
+.display {
+	width: 60%;
+	height: auto;
+	min-height: 95%;
+}
+.Logo {
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	color: white;
+}	
+.text {
+	font-size: 2.5rem;
+	height: 7%;
+}
+input {
+	width: 60%;
+	height: 5vh;
+	border-radius: 23px;
+	outline: none;
+	border: none;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	left: 50%;
+	top: 10%;
+	font-size: 1.33rem;
+	transform: translateX(-50%);
+	z-index: 999;
+}
+.container1 {
+	width: 100%;
+	height: 78%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	bottom: 15%;
+	position: relative;
+}
+#task-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.li {
+	width: 95%;
+	height: 7vh;
+	border-radius: 23px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+background: rgba(255, 255, 255, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15.2px);
+margin-top: 10px;
+-webkit-backdrop-filter: blur(15.2px);
+display: flex;
+border: 1px solid rgba(255, 255, 255, 0.44);
+padding-left: 15px;
+font-size: 1.5rem;
+}
+.display {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 10px;
+	flex-direction: column;
+
+}
